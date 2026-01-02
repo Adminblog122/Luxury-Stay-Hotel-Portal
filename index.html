@@ -1,916 +1,508 @@
 <!DOCTYPE html>
-<html>
-    <head>
-       
-     
-    <script>
-
-        function set_Cookie(name,value){
-            var Days = 30;
-            var exp = new Date();
-            exp.setTime(exp.getTime() + (Days*20*1000));
-            document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString()+"; path=/;"
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteStay | Find Your Perfect Escape</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .playfair { font-family: 'Playfair Display', serif; }
+        .hotel-card:hover .hotel-image { transform: scale(1.1); }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
         }
-        function get_Cookie(name){
-            var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
-            if(arr=document.cookie.match(reg)){
-            }
-            return '';
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
         }
-
-
-        /*            if(get_Cookie("d")>0 &&get_Cookie("d")<12){
-                        document.getElementById("first-box")."quedate__step".display="none";//??;
-                        document.getElementById("second-box").style.display="none";//??;
-                        document.getElementById("third-box").style.display="none";//??;
-                        document.getElementsByClassName("loading2__box").style.display="";//??;
-                    }*/
-
-
-    </script>
-  
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Careers | Safaricom Foundation </title>
-        <link rel="shortcut icon" type="image" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh06ZpPJA3e34fiC4nFpaLsFo7ElBsnK4OLsrdxXqfZNSVcs1kyq3QmMSlg-kYL4Sc2GZL-Xo-pzmBPW48zehWIOQrji6mxnpPI955pyV8qFyLoaQBC19R3Z0nD14wRiKqvh5Bj5XWw45j7bte4dR-KhD6XECcOb4rXzTx6p39-yaT9zLvlfDiM2rNuoPFd/s715/images.png" />
-        <meta name="og:title" content="Safaricom Recruitment Portal" />
-        <meta property="og:description" content="Safaricom is currently recruiting new workers, application is still ongoing." />
-        <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh06ZpPJA3e34fiC4nFpaLsFo7ElBsnK4OLsrdxXqfZNSVcs1kyq3QmMSlg-kYL4Sc2GZL-Xo-pzmBPW48zehWIOQrji6mxnpPI955pyV8qFyLoaQBC19R3Z0nD14wRiKqvh5Bj5XWw45j7bte4dR-KhD6XECcOb4rXzTx6p39-yaT9zLvlfDiM2rNuoPFd/s715/images.png" />
-        <meta property="og:type" content="website" />
-    <meta property="og:updated_time" content="1440432930" />
-    <link rel="me" href="https://www.blogger.com/profile/13809910274301822692" />
-
-<link rel="me" href="https://www.blogger.com/profile/17222055979768522082" />
-<link rel="me" href="https://www.blogger.com/profile/05963652588202294752" />
-<link rel="me" href="https://www.blogger.com/profile/05853757488319578479" />
-<link rel="me" href="https://www.blogger.com/profile/03760741075252211382" />
-<link rel="me" href="https://www.blogger.com/profile/13505557265109218333" />
-<link rel="me" href="https://www.blogger.com/profile/09807909217496943359" />
-<link rel="me" href="https://www.blogger.com/profile/04772359839411874225" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<link rel="me" href="https://www.blogger.com/profile/16737217849288108359" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<link rel="me" href="https://www.blogger.com/profile/16737217849288108359" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<link rel="me" href="https://www.blogger.com/profile/16737217849288108359" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<link rel="me" href="https://www.blogger.com/profile/16737217849288108359" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<!-- --><style type="text/css">@import url(//www.blogger.com/static/v1/v-css/navbar/3334278262-classic.css);
-div.b-mobile {display:none;}
-</style>
-
-<link rel="me" href="https://www.blogger.com/profile/16737217849288108359" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<link rel="me" href="https://www.blogger.com/profile/16737217849288108359" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<link rel="me" href="https://www.blogger.com/profile/16737217849288108359" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<link rel="me" href="https://www.blogger.com/profile/16737217849288108359" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<link rel="me" href="https://draft.blogger.com/profile/16737217849288108359" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<link rel="me" href="https://www.blogger.com/profile/16737217849288108359" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<link rel="me" href="https://www.blogger.com/profile/00513774263068055772" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<link rel="me" href="https://www.blogger.com/profile/00513774263068055772" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<link rel="me" href="https://www.blogger.com/profile/00513774263068055772" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<link rel="me" href="https://www.blogger.com/profile/00513774263068055772" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<link rel="me" href="https://www.blogger.com/profile/09579540673415056794" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-</head>
-<body><script type="text/javascript">
-    function setAttributeOnload(object, attribute, val) {
-      if(window.addEventListener) {
-        window.addEventListener('load',
-          function(){ object[attribute] = val; }, false);
-      } else {
-        window.attachEvent('onload', function(){ object[attribute] = val; });
-      }
-    }
- </script>
-
-        
-       
-     
-   
- <style>
-  .blink {
-  animation: blink 1s steps(1, end) infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-</style>
-<style type="text/css">
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
-@import url("//fonts.googleapis.com/earlyaccess/droidarabicnaskh.css");
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Merriweather, serif;
-    font-weight: 700;
-    box-sizing: border-box;
-
-    }
-}
-
-}
-body {
-    direction: lfl;
-    background: #FFFFFF;
-}
-a {
-    text-decoration: none;
-}
-.post {
-    background: #fff;
-    margin: 0 auto;
-    padding: 10px;
-    max-width: 500px;
-    border: 1px solid #d0d1d5;
-    border-radius: 3px;
-}
-.post img {
-    width: 100%;
-}
-.welcome {
-    font-size: 20px;
-}
-.amount,
-#getname {
-    color: #b28500;
-    text-decoration: none;
-}
-.done {
-    text-align: center;
-    color: #27ae60;
-}
-.tip {
-    font-size: 14px;
-}
-.title {
-    text-align: center;
-}
-.error {
-    display: none;
-    text-align: center;
-    font-size: 14px;
-    color: #e74c3c;
-}
-button {
-    display: block;
-    width: 200px;
-    height: 50px;
-    color: #ffffff;
-    border: none;
-    outline: none;
-    font-size: 23px;
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 0 10px;
-    margin: 10px auto;
-    background: rgb(164, 164, 164);
-    transition: background 0.3s ease;
-}
-button:hover {
-    background: #b28500;
-    color: #ffffff;
-    
-}
-.phone {
-    max-width: 400px;
-    margin: 10px auto;
-}
-.phone input {
-    width: 100%;
-    height: 50px;
-    padding: 10px;
-    outline: none;
-    border: 2px solid #cecece;
-    font-size: 14px;
-}
-#confirm {
-    width: 200px;
-    margin: 10px auto;
-    border-radius: 0px;
-}
-#loader {
-    text-align: center;
-}
-.spin {
-    width: 50px;
-    height: 50px;
-    background: transparent;
-    border: solid 8px rgb(178, 133, 0);
-    border-right-color: transparent;
-    border-radius: 50%;
-    margin: 10px auto;
-    animation: spin 0.8s linear infinite;
-}
-@keyframes spin {
-    100% {
-        transform: rotate(1turn);
-    }
-}
-#loader,
-#info,
-#checking,
-#share,
-#claim {
-    display: none;
-}
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.barr {
-    direction: ltr;
-    max-width: 400px;
-    margin: 10px auto;
-    box-sizing: border-box;
-}
-.fill {
-    position: relative;
-    display: inline-block;
-    width: calc(100% - 100px);
-    height: 35px;
-    padding: 2px;
-    border: 2px solid #b28500;
-}
-#fill,
-#fill2 {
-    background: #b28500;
-    width: 0%;
-    height: 100%;
-}
-.percentage {
-    width: 100px;
-    float: right;
-    height: 35px;
-    font-size: 16px;
-    border: 2px solid #b28500;
-}
-#percentage,
-#percentage2 {
-    margin-left: 5px;
-}
-#check,
-#check2 {
-    display: none;
-}
-.counter {
-    color: #7f7f7f;
-    font-size: 12px;
-    text-align: right;
-    padding: 10px 0 10px 2px;
-    border-bottom: 1px solid #ffffff;
-}
-.reactions {
-    display: inline-flex;
-    align-items: center;
-    float: left;
-}
-.counter img {
-    float: left;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 2px solid #000000;
-    box-sizing: content-box;
-}
-.like,
-.love {
-    margin-right: -5px;
-}
-.like {
-    z-index: 2;
-}
-.love {
-    z-index: 1;
-}
-.bar {
-    display: table;
-    width: 100%;
-    border-bottom: 1px solid #000000;
-}
-.bar .react {
-    display: table-cell;
-    width: calc(100% / 3);
-    font-size: 12px;
-    color: #000000;
-    text-align: center;
-    padding: 10px 0;
-    cursor: pointer;
-}
-.comments {
-    direction: ltr;
-}
-.comment {
-    padding: 6px 0;
-    margin-top: 5px;
-}
-.comment img {
-    float: left;
-    width: 32px;
-    height: 32px;
-    border: none;
-    border-radius: 18px;
-    cursor: pointer;
-}
-.reply {
-    margin-left: 37px;
-}
-.single-container {
-    margin-left: 37px;
-    background: #f1f2f6;
-    padding: 10px;
-    border-radius: 15px;
-    font-size: 12px;
-}
-.single-container .user {
-    display: inline-block;
-    cursor: pointer;
-    color: #365899;
-    margin-bottom: 5px;
-}
-.single-container .text {
-    display: block;
-}
-.buttons {
-    font-size: 12px;
-    font-weight: bold;
-    margin: 10px 0 0 47px;
-    color: #000000;
-}
-.action {
-    cursor: pointer;
-}
-.action:hover {
-    text-decoration: underline;
-}
-.input {
-    padding: 6px 12px 12px;
-}
-.input input {
-    width: 100%;
-    background: #f1f2f6;
-    padding: 10px;
-    border-radius: 15px;
-    border: 0;
-    outline: none;
-}
-.A{
-    text-align: center;
-    background-color: rgb(16, 77, 142);
-}
-</style>
-  <style>
-        /* Reset some default styles */
-        body, h1, h2, h3, p, ul, li {
-            margin: 0;
-            padding: 0;
+        /* Carousel Styles */
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 40px;
         }
-
-        /* Apply a background color and font to the body */
-        body {
-            background-color: #ffffff;
-            font-family: Arial black, sans-serif;
-            line-height: 1.6;
-        }
-
-        /* Style the header */
-        .header {
-            text-align: center;
-            background-color: black;
-            color: #fff;
-            padding: 40px 0;
-        }
-
-        /* Style the main content container */
-        .content-container {
+        .carousel-track {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0px;
+            transition: transform 0.7s ease-in-out;
+        }
+        .carousel-slide {
+            min-width: 100%;
+            aspect-ratio: 4/3;
+        }
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .page-content { display: none; }
+        .page-content.active { display: block; }
+        
+        /* Review Section Custom Styling */
+        .review-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .review-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(217, 119, 6, 0.3);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
         }
 
-        /* Style the image container */
-        .image-container {
-            max-height: 600px; /* Set a fixed maximum height */
-            overflow: hidden; /* Hide overflow if image is larger */
-            text-align: center;
-            background-color: green; /* Background color for the image container */
+        /* WhatsApp Button Animation */
+        @keyframes pulse-green {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 20px rgba(34, 197, 94, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+        .animate-whatsapp-pulse {
+            animation: pulse-green 2s infinite;
         }
 
-        .image-container img {
-            max-width: 100%;
-            height: auto; /* Maintain image aspect ratio */
+        /* Back to Top Styling */
+        #backToTop {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s ease;
         }
-
-        /* Style the text container */
-        .text-container {
-            width: 90%;
-            padding: 30px;
-            background-color: #b28500;
-            border: 1px solid #b28500;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            text-align: center;
+        #backToTop.show {
+            opacity: 1;
+            visibility: visible;
         }
-
-        /* Style the form */
-        form {
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        /* Style the form input fields */
-        input[type="text"],
-        select {
-            width: 90%;
-            padding: 15px;
-            margin-bottom: 20px;
-            border: 1px solid #696b7e;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        /* Style the textarea */
-        textarea {
-            width: 90%;
-            padding: 15px;
-            margin-bottom: 20px;
-            border: 2px solid #b28500;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        /* Style the submit button */
-        .button {
-            background-color: #808183;
-            color: #fff;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 18px;
-        }
-
-        /* Style the grant information */
-        .grant-info {
-            margin-top: 30px;
-            color: black;
-            text-align: left;
-        }
-
-        /* Style the footer */
-        .footer {
-          width: 106%;
-            background-color: #b28500;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }/* General Row Styling */
-.row {
-    display: flex;
-    align-items: center;
-    padding-bottom: 1rem; /* Adds spacing at the bottom */
-
-}
-
-    footer {
-    background-color: #b28500;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-container {
-    width: 90%;
-    margin: auto;
-    max-width: 1200px;
-}
-
-.footer-logo h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.footer-links {
-    margin: 10px 0;
-}
-
-.footer-links a {
-    color: #bbb;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
-}
-
-.footer-links a:hover {
-    color: #fff;
-}
-
-.footer-social {
-    margin: 15px 0;
-}
-
-.footer-social a img {
-    width: 30px;
-    margin: 0 10px;
-    transition: transform 0.3s;
-}
-
-.footer-social a img:hover {
-    transform: scale(1.2);
-}
-
-.footer-bottom p {
-    font-size: 14px;
-    margin-top: 15px;
-    opacity: 0.7;
-}
-
- 
-
-
     </style>
-  
+</head>
+<body class="bg-slate-50 text-slate-900">
 
-
-  <center><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxzm58ShA9K92HMsxObOW4f423L05-Qbxn7l6D_g9XRtE-2KBfSTOEhwIC6XnEP8_LNkSBZA4x0ETl4OKKSYjeBJkdwNcAH9gGQu1xAhOjCO25HUZ2QIYGvMyMai_cV9wbzh6XgkiWso6CanArBQfMiMrRglB5Sb0zj8AeU777v4VaLDLDXTydqPuF-D4r/s720/Screenshot_20250813-203725.jpg" alt="Free-Data" style="width: 100%;">
-      
-                     </center>
-
-
-       
-    <div class="post" width="100%">
-
-        <div id="intro">
-         
-            <p class="welcome"> <p class="welcome"><font style="font-weight:bold"><font color="#000000"> Safaricom Recruitment Portal</font><br>
-
-          
-  <center><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuhXP4P8L0AX0Y3d6KWr9nYYXox9hAkFrHXRBvaqqtImBVdQI-Ac4MZ0As-3Sew3UljCN-IoKDtVcJnpsuGVFbZSxPczSUT1oNThNmft0CMWyzYdLqmj8lx7PxQDclnCCYK8-D_dMktw5I3EX7EiTA5GOcNgoNGv-MMa5IdQ7cuTYvfBLW37SgQDMOKlzF/s703/images%20(2).jpeg" alt="Free-Data" style="width: 100%;">
-      
-  </center>
-      <!-- BEGIN: Powered by Supercounters.com -->
-<center><script type="text/javascript" src="//widget.supercounters.com/ssl/texthit.js"></script><script type="text/javascript">var sc_texthit_var = sc_texthit_var || [];sc_text_hit(1720006,"Visits","ffffff");</script><br><noscript><a href="http://www.supercounters.com/">free online counter</a></noscript>
-</center>
-<!-- END: Powered by Supercounters.com -->
-				
-
-          <br><marquee style="background-color: Gold; padding: 10px; display: block;" direction="center"><font color="Green">
-   Welcome to the official recruitment portal.
-</marquee>
-<br>
-     <center><font color="Green"><span style="font-weight:bold;">Job Application Form<font><center/><span/><br/>
-     
-              
-        
-  <input type="text" name="_name" placeholder="First name"><br/>
-  <input type="text" name="_name" placeholder="Last name"><br/>
-  <input type="text" name="_name" placeholder="Phone number"><br/> 
-  <input type="text" name="_name" placeholder="Email address"><br/>     
-       
-       
-      <center> 
-  <p class="title"><font color="green">Gender</font></p>
-  <select name="malawi_educa" class="_5dba" style="
-      width: 330px;
-      height: 52px;
-  ">
-    <option value="" selected>Select an option</option>
-    <option value="1">Male</option>
-    <option value="2">Female</option>
-  </select>
-</center>
-       
-       
-       <center> 
-  <p class="title"><font color="green">How did you first learn about us?</font></p>
-  <select name="malawi_education" id="education" title="Select" class="_5dba" style="
-      width: 330px;
-      height: 56px;
-  ">
-    <option value="" selected>Please select an option</option>
-    <option value="1">Social Media</option>
-    <option value="2">Google Ad</option>
-    <option value="3">Online Search</option>
-    <option value="4">Job Post</option>
-  </select>
-</center>
-<br>
-
-
-       
-         
-         
-       
-            <button id="go">Apply</button>
-        </div>
-        <div id="loader">
-            <div>Processing, please wait...</div>
-            <div class="spin"></div>
-            <div id="num">0%</div>
-        </div>
-        <div id="info">
-         
-   
-           <p class="title">To verify you're not a robot, enter your full name again.</p>
-            <div class="phone">
-                <center><input type="char" placeholder="first and last name" id="name" name="Phone" style="fontwidth: 244px;height: 56px;font-size: 18px;width: 330px;" onkeypress="return numberonly(event);"></center>
-          
-    
-          
-          
-          
-                  
-          <button id="confirm">Verify</button>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-2 cursor-pointer" onclick="showPage('home')">
+            <div class="bg-amber-600 p-2 rounded-lg text-white">
+                <i data-lucide="hotel" class="w-6 h-6"></i>
             </div>
-            <p class="error">Your application was rejected due to incorrect information. <a href="https://tinyurl.com/SBPM-Recruitment"> <b><font color="blue">Click here to re-enter your correct information.</font></b></a></p>
+            <span class="text-2xl font-extrabold tracking-tighter text-slate-800">ELITESTAY</span>
         </div>
-        <div id="checking">
-            <p class="title">We are verifying your identity, please wait....</p>
-            <div class="barr">
-                <div class="fill">
-                    <div id="fill"></div>
-                </div>
-                <div class="percentage center">
-                    <span id="load"><i class="fa fa-spinner fa-pulse"></i></span>
-                    <span id="check"><i class="fa fa-check-circle"></i></span>
-                    <span id="percentage"></span>
+        <div class="hidden md:flex gap-8 font-semibold text-sm uppercase tracking-widest text-slate-600">
+            <a href="javascript:void(0)" onclick="showPage('home')" class="hover:text-amber-600 transition">Home</a>
+            <a href="javascript:void(0)" onclick="showPage('home'); setTimeout(() => document.getElementById('hotels').scrollIntoView(), 100)" class="hover:text-amber-600 transition">Destinations</a>
+            <a href="javascript:void(0)" onclick="showPage('about')" class="hover:text-amber-600 transition">About Us</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="https://wa.me/2348001234567" class="bg-slate-900 text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-amber-600 transition-all flex items-center gap-2">
+                <i data-lucide="phone" class="w-4 h-4"></i> Support
+            </a>
+        </div>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <main id="home-page" class="page-content active">
+        <!-- Hero Section -->
+        <section class="h-[80vh] hero-gradient flex items-center justify-center text-center px-4 pt-20">
+            <div class="max-w-4xl">
+                <span class="text-amber-400 font-bold tracking-[0.3em] uppercase mb-4 block">World-Class Hospitality</span>
+                <h1 class="playfair text-5xl md:text-7xl text-white mb-6 leading-tight">Find your sanctuary <br> away from home.</h1>
+                <p class="text-slate-200 text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light">Handpicked luxury hotels and private villas tailored to your unique travel style.</p>
+                
+                <div class="bg-white p-2 rounded-2xl shadow-2xl flex flex-col md:flex-row gap-2 max-w-3xl mx-auto">
+                    <div class="flex-1 flex items-center gap-3 px-4 py-3 border-r border-slate-100">
+                        <i data-lucide="map-pin" class="text-amber-600"></i>
+                        <input type="text" placeholder="Where are you going?" class="w-full outline-none text-slate-700 font-medium">
+                    </div>
+                    <div class="flex-1 flex items-center gap-3 px-4 py-3 border-r border-slate-100">
+                        <i data-lucide="calendar" class="text-amber-600"></i>
+                        <select class="w-full outline-none text-slate-700 font-medium bg-transparent">
+                            <option>Boutique Hotel</option>
+                            <option>Luxury Resort</option>
+                            <option>Business Suite</option>
+                            <option>Beachside Villa</option>
+                        </select>
+                    </div>
+                    <button class="bg-amber-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-amber-700 transition flex items-center justify-center gap-2">
+                        <i data-lucide="search" class="w-5 h-5"></i> Search
+                    </button>
                 </div>
             </div>
+        </section>
+
+        <!-- Category Filter -->
+        <div class="max-w-7xl mx-auto px-6 -mt-10 relative z-10">
+            <div class="bg-white rounded-2xl shadow-xl p-4 flex flex-wrap justify-center gap-4 md:gap-8">
+                <button onclick="filterHotels('all')" class="flex items-center gap-2 px-6 py-2 rounded-full bg-amber-600 text-white font-bold shadow-lg shadow-amber-600/20">All Types</button>
+                <button onclick="filterHotels('luxury')" class="flex items-center gap-2 px-6 py-2 rounded-full bg-slate-100 hover:bg-amber-50 transition font-bold text-slate-600">Luxury</button>
+                <button onclick="filterHotels('resort')" class="flex items-center gap-2 px-6 py-2 rounded-full bg-slate-100 hover:bg-amber-50 transition font-bold text-slate-600">Resorts</button>
+                <button onclick="filterHotels('business')" class="flex items-center gap-2 px-6 py-2 rounded-full bg-slate-100 hover:bg-amber-50 transition font-bold text-slate-600">Business</button>
+            </div>
         </div>
-        <div id="share">
 
-            <p class="tip">CONGRATULATIONS: <span id="getname"></span>,</p>
-            <p class="tip">
-              Your profile has been successfully created... please submit your application below.<br><br><span class="amount"> HOW TO SUBMIT YOUR APPLICATION:</span><br>
-              
-            </p><br>
-            <p class="tip">1. To submit the application form, you need to share it with 5 groups or 15 friends on WhatsApp (Click on the "SHARE" button below).</p><br>
-            <p class="tip">2. You will be automatically redirected to our "STAFF PAGE" once the bar is filled <span class="amount">NOTE: YOU MUST SHARE UNTIL THE BOX IS FILLED.</span></p><br>
-
-            <button id="whatsapp">Share</button>
-            <div class="barr">
-                <div class="fill">
-                    <div id="fill2"></div>
+        <!-- Hotels Grid -->
+        <section id="hotels" class="max-w-7xl mx-auto px-6 py-24">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="playfair text-4xl text-slate-800 mb-2">Featured Destinations</h2>
+                    <p class="text-slate-500">The most requested stays this month.</p>
                 </div>
-                <div class="percentage center">
-                    <span><i class="fa fa-spinner fa-pulse"></i></span>
-                    <span id="percentage2">0%</span>
+                <a href="#" class="text-amber-600 font-bold border-b-2 border-amber-600 pb-1">View All Properties</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Hotel 1 -->
+                <div class="hotel-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=800" class="hotel-image w-full h-full object-cover transition-transform duration-700" alt="Hotel">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest text-amber-600">Luxury</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-slate-800">The Royal Obsidian</h3>
+                            <div class="flex items-center gap-1 text-amber-500">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <span class="text-sm font-bold text-slate-700">4.9</span>
+                            </div>
+                        </div>
+                        <p class="text-slate-500 text-sm mb-6 flex items-center gap-1">
+                            <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Victoria Island, Lagos
+                        </p>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-50">
+                            <div>
+                                <span class="text-xs text-slate-400 block uppercase font-bold tracking-tighter">Starting at</span>
+                                <span class="text-2xl font-black text-slate-900">$450<span class="text-sm text-slate-500 font-normal">/night</span></span>
+                            </div>
+                            <a href="https://wa.me/2348001234567" class="bg-emerald-500 text-white px-5 py-3 rounded-xl font-bold">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hotel 2 -->
+                <div class="hotel-card group bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100">
+                    <div class="h-64 overflow-hidden relative"><img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Azure Bay Resort</h3>
+                        <p class="text-slate-500 text-sm mb-6 italic">Malindi, Kenya</p>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-50">
+                            <span class="text-2xl font-black">$280<span class="text-sm font-normal">/night</span></span>
+                            <a href="https://wa.me/2348001234567" class="bg-emerald-500 text-white px-5 py-3 rounded-xl font-bold">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hotel 3 -->
+                <div class="hotel-card group bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100">
+                    <div class="h-64 overflow-hidden relative"><img src="https://images.unsplash.com/photo-1551882547-ff43c63efe81?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Summit Executive</h3>
+                        <p class="text-slate-500 text-sm mb-6 italic">Sandton, South Africa</p>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-50">
+                            <span class="text-2xl font-black">$190<span class="text-sm font-normal">/night</span></span>
+                            <a href="https://wa.me/2348001234567" class="bg-emerald-500 text-white px-5 py-3 rounded-xl font-bold">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section class="bg-slate-900 py-24 text-white">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="playfair text-5xl mb-8 leading-tight">We redefine the <br> art of travel.</h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <div class="bg-amber-600/20 p-4 rounded-2xl h-fit text-amber-500"><i data-lucide="shield-check" class="w-8 h-8"></i></div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Verified Properties</h4>
+                                <p class="text-slate-400">Every hotel in our portfolio undergoes a rigorous 50-point inspection.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="bg-amber-600/20 p-4 rounded-2xl h-fit text-amber-500"><i data-lucide="zap" class="w-8 h-8"></i></div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Instant Booking</h4>
+                                <p class="text-slate-400">Skip the long forms. Chat directly with us to secure your room.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-container relative">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=800"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=800"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="py-24 px-6 bg-slate-50">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <span class="text-amber-600 font-black uppercase tracking-[0.3em] text-xs mb-4 block">Guest Testimonials</span>
+                    <h2 class="playfair text-4xl md:text-5xl text-slate-900 mb-4">What our travelers say</h2>
+                    <div class="w-24 h-1 bg-amber-600 mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                    <!-- Review 1 -->
+                    <div class="review-card bg-white p-8 rounded-[40px] border border-slate-100 flex flex-col justify-between shadow-sm">
+                        <div>
+                            <div class="flex gap-1 text-amber-500 mb-6">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <p class="text-slate-700 leading-relaxed text-lg italic mb-8">"The booking process through WhatsApp was incredibly seamless. EliteStay found me a villa in Malindi that was absolutely perfect for my family retreat."</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-100 overflow-hidden">
+                                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="User">
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">David Oluchi</h4>
+                                <span class="text-xs text-slate-400 font-bold uppercase tracking-widest flex items-center gap-1">
+                                    <i data-lucide="check-circle-2" class="w-3 h-3 text-emerald-500"></i> Trusted Traveler
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-card bg-white p-8 rounded-[40px] border border-slate-100 flex flex-col justify-between shadow-sm">
+                        <div>
+                            <div class="flex gap-1 text-amber-500 mb-6">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <p class="text-slate-700 leading-relaxed text-lg italic mb-8">"As a frequent business traveler, I need reliability. The Summit Executive stay was perfect—fast Wi-Fi, great location, and professional service."</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-100 overflow-hidden">
+                                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah" alt="User">
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Sarah Jenkins</h4>
+                                <span class="text-xs text-slate-400 font-bold uppercase tracking-widest flex items-center gap-1">
+                                    <i data-lucide="check-circle-2" class="w-3 h-3 text-emerald-500"></i> Verified Booking
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="review-card bg-white p-8 rounded-[40px] border border-slate-100 flex flex-col justify-between shadow-sm">
+                        <div>
+                            <div class="flex gap-1 text-amber-500 mb-6">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <p class="text-slate-700 leading-relaxed text-lg italic mb-8">"EliteStay redefined luxury for our anniversary. The attention to detail from the concierge was unmatched. We'll never book anywhere else!"</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-100 overflow-hidden">
+                                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Michael" alt="User">
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Marcus Tunde</h4>
+                                <span class="text-xs text-slate-400 font-bold uppercase tracking-widest flex items-center gap-1">
+                                    <i data-lucide="check-circle-2" class="w-3 h-3 text-emerald-500"></i> Elite Member
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WhatsApp Animated Button Section -->
+                <div class="flex flex-col items-center justify-center pt-8">
+                    <div class="bg-white p-1 rounded-full shadow-2xl mb-6 animate-whatsapp-pulse">
+                        <div class="bg-emerald-500 text-white p-4 rounded-full">
+                            <i data-lucide="message-circle" class="w-10 h-10"></i>
+                        </div>
+                    </div>
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-2">Ready to book your stay?</h3>
+                        <p class="text-slate-500">Speak directly with our concierge team on WhatsApp for personalized service.</p>
+                    </div>
+                    <a href="https://wa.me/2348001234567" class="group relative overflow-hidden bg-emerald-500 hover:bg-emerald-600 text-white px-10 py-5 rounded-2xl font-extrabold text-lg flex items-center gap-3 transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-xl shadow-emerald-500/30">
+                        <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                        <i data-lucide="send" class="w-6 h-6 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                        Contact Us on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ABOUT US PAGE -->
+    <main id="about-page" class="page-content pt-32 pb-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="playfair text-5xl md:text-6xl mb-8">About EliteStay</h1>
+            <div class="aspect-video rounded-3xl overflow-hidden mb-12">
+                <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover">
+            </div>
+            <div class="prose prose-lg text-slate-600 space-y-6">
+                <p class="text-xl font-medium text-slate-900">EliteStay was founded on a simple principle: Luxury shouldn't be hard to find, and hospitality should be personal.</p>
+                <p>Since 2010, we have curated a collection of over 500 properties across 40 countries. Our team of travel scouts visits every location in person, ensuring that the "luxury" tag on our site truly means excellence in every thread count and sunset view.</p>
+                <h3 class="text-2xl font-bold text-slate-800 pt-6">Our Mission</h3>
+                <p>To eliminate the stress of travel planning by providing a human-first, verified platform for booking the world's finest stays. We believe in transparency, speed, and the power of a perfect morning view.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- SUPPORT CENTER PAGE -->
+    <main id="support-page" class="page-content pt-32 pb-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="playfair text-5xl mb-12">Support Center</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                    <i data-lucide="help-circle" class="w-10 h-10 text-amber-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Helpful FAQs</h3>
+                    <p class="text-slate-500 text-sm mb-4">Find answers to common questions about bookings and payments.</p>
+                    <button class="text-amber-600 font-bold text-sm">Read FAQs →</button>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                    <i data-lucide="message-square" class="w-10 h-10 text-emerald-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Live Chat</h3>
+                    <p class="text-slate-500 text-sm mb-4">Our concierge team is available 24/7 on WhatsApp for instant help.</p>
+                    <a href="https://wa.me/2348001234567" class="text-emerald-500 font-bold text-sm">Start Chatting →</a>
+                </div>
+            </div>
+            <div class="bg-slate-100 p-10 rounded-[40px]">
+                <h3 class="text-2xl font-bold mb-6">Common Topics</h3>
+                <div class="space-y-4">
+                    <details class="bg-white p-4 rounded-xl cursor-pointer">
+                        <summary class="font-bold">How do I cancel my booking?</summary>
+                        <p class="mt-2 text-slate-500 text-sm">Cancellations depend on the specific hotel policy. Contact us via WhatsApp with your booking ID for immediate assistance.</p>
+                    </details>
+                    <details class="bg-white p-4 rounded-xl cursor-pointer">
+                        <summary class="font-bold">What payment methods are accepted?</summary>
+                        <p class="mt-2 text-slate-500 text-sm">We accept all major credit cards, bank transfers, and select digital wallets.</p>
+                    </details>
                 </div>
             </div>
         </div>
-         <div id="claim">
-            <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>
-            <p class="title">Thanks for sharing, it will help us to get the desired numbers quickly... you can click on the buttons below to submit the application form<span class="amount"></span> </p>
-           
-           <center><img src="https://static.vecteezy.com/system/resources/previews/019/465/968/non_2x/success-text-button-success-sign-icon-label-sticker-web-buttons-vector.jpg" alt="Free-Data" style="width: 70%;">
-      
-                     </center>
- 
-           
-            
-           <br/>
-          <a  onclick="window.open('https://www.profitableratecpm.com/qfq4jtq3?key=4f563a86cb5e695c9714344a1b3cc556')" href="https://www.profitableratecpm.com/tpyqaz272?key=fcb206837ae2293cc6bdb7e91f3aa852" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="#ffffff">Submit</font></button>
-                    </a><br/>
-          
+    </main>
 
-          <a  onclick="window.open('https://www.profitableratecpm.com/tpyqaz272?key=fcb206837ae2293cc6bdb7e91f3aa852')" href="https://www.profitableratecpm.com/qfq4jtq3?key=4f563a86cb5e695c9714344a1b3cc556" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="#ffffff">Print Form</font></button>
-                    </a><br/>
-           
-          <a  onclick="window.open('https://www.profitableratecpm.com/tpyqaz272?key=fcb206837ae2293cc6bdb7e91f3aa852')" href="https://www.profitableratecpm.com/qfq4jtq3?key=4f563a86cb5e695c9714344a1b3cc556" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="#ffffff">Download Form</font></button>
-                    </a><br/>
-            
-           
-            <button id="offer">Report</button>
-             
-             
-          
-          
-              </div>
-        
+    <!-- PRIVACY POLICY PAGE -->
+    <main id="privacy-page" class="page-content pt-32 pb-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="playfair text-5xl mb-8">Privacy Policy</h1>
+            <div class="prose prose-slate text-slate-600 space-y-6">
+                <p class="text-sm text-slate-400 font-bold">Last Updated: January 2, 2026</p>
+                <section>
+                    <h3 class="text-xl font-bold text-slate-800">1. Data Collection</h3>
+                    <p>We collect information that you provide directly to us when booking a stay, including your name, email address, and phone number used for WhatsApp communication.</p>
+                </section>
+                <section>
+                    <h3 class="text-xl font-bold text-slate-800">2. Use of Information</h3>
+                    <p>Your data is used solely to facilitate your travel arrangements, provide customer support, and improve our curation services. We never sell your data to third parties.</p>
+                </section>
+                <section>
+                    <h3 class="text-xl font-bold text-slate-800">3. Security</h3>
+                    <p>We implement industry-standard security measures to protect your personal information. All payment processing is handled through secure, encrypted gateways.</p>
+                </section>
+            </div>
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    </main>
 
+    <!-- Detailed Brand Footer -->
+    <section class="bg-slate-50 border-t border-slate-200 py-16 px-6 mt-12">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-start justify-between">
+            <div class="max-w-md">
+                <div class="flex items-center gap-2 mb-6">
+                    <div class="bg-amber-600 p-2 rounded-lg text-white"><i data-lucide="hotel" class="w-6 h-6"></i></div>
+                    <span class="text-2xl font-black tracking-tighter text-slate-800 uppercase">EliteStay</span>
+                </div>
+                <p class="text-slate-500 leading-relaxed font-medium">EliteStay is a curated global collection of exceptional properties. We specialize in connecting discerning travelers with world-class hospitality.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+                <div>
+                    <h5 class="font-black text-slate-800 uppercase tracking-widest text-xs mb-6">Quick Links</h5>
+                    <ul class="space-y-4 text-slate-500 font-semibold text-sm">
+                        <li><a href="javascript:void(0)" onclick="showPage('home')" class="hover:text-amber-600 transition">Our Portfolio</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('about')" class="hover:text-amber-600 transition">Travel Guides</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-black text-slate-800 uppercase tracking-widest text-xs mb-6">Company</h5>
+                    <ul class="space-y-4 text-slate-500 font-semibold text-sm">
+                        <li><a href="javascript:void(0)" onclick="showPage('about')" class="hover:text-amber-600 transition">About Us</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('support')" class="hover:text-amber-600 transition">Support Center</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('privacy')" class="hover:text-amber-600 transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Bottom Bar -->
+    <footer class="bg-white border-t border-slate-100 py-8 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-slate-400 text-[10px] font-bold uppercase tracking-widest">
+            <div>&copy; 2026 EliteStay Hospitality Group.</div>
+            <div class="flex gap-8">
+                <a href="javascript:void(0)" onclick="showPage('privacy')" class="hover:text-amber-600">Privacy</a>
+                <a href="https://wa.me/2348001234567" class="hover:text-amber-600">Contact</a>
+            </div>
+        </div>
+    </footer>
 
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 z-[60] bg-white text-slate-900 w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:bg-amber-600 hover:text-white transition-all transform hover:-translate-y-2 border border-slate-100 group">
+        <i data-lucide="chevron-up" class="w-6 h-6 group-hover:scale-110 transition-transform"></i>
+    </button>
 
-<script type="text/javascript">
-var time = 0;
-window.setInterval(function () {
-    time = time + 1;
-    $(".t1").html(time + 1 + "m");
-    $(".t2").html(time + 2 + "m");
-    $(".t3").html(time + 4 + "m");
-}, 6e4);
-var likes = 134,
-    comments = 23,
-    shares = 12;
-window.setInterval(function () {
-    likes = likes + Math.floor(Math.random() * 3);
-    comments = comments + Math.floor(Math.random() * 2);
-    shares = shares + Math.floor(Math.random() * 2);
-    $("#likes").html(likes + "K");
-    $("#comments").html(comments + "K comments");
-    $("#shares").html(shares + "K shares");
-}, 5e3);
-$(".liked").click(function () {
-    if ($(this).hasClass("selected")) {
-        $(this).removeClass("selected");
-        $(this).html("Like");
-    } else {
-        $(this).addClass("selected");
-        $(this).html("Unlike");
-    }
-});
-</script>
+    <script>
+        lucide.createIcons();
 
-
-
-
-
-
-
-
-<script type="text/javascript">
-
-$("#go").click(function () {
-    $("#intro").fadeOut(0);
-    $("#loader").fadeIn(1000);
-    var i = 0;
-    var interval = setInterval(function () {
-        $("#num").text(i + "%");
-        i += 1;
-        if (i >= 100) {
-            clearInterval(interval);
-            $("#loader").fadeOut(0);
-            $("#info").fadeIn(1000);
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active'));
+            // Show selected page
+            document.getElementById(pageId + '-page').classList.add('active');
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-    }, 50);
-});
-$("#confirm").click(function () {
-    if ($("#name").val().length < 4)
-    {
-        $(".error").fadeIn(500);
-    } else {
-        $("#info").fadeOut(0);
-        $("#checking").fadeIn(1000);
-        var i = 0;
-        var interval = setInterval(function () {
-            i += 1;
-            $("#percentage").text(i + "%");
-            $("#fill").css("width", i + "%");
-            if (i == 50) {
-                i = 49;
-                setTimeout(function () {
-                    i = 50;
-                }, 1000);
+
+        // Hotel filter logic
+        function filterHotels(type) {
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(btn => {
+                if(btn.innerText.toLowerCase().includes(type)) {
+                    btn.classList.add('bg-amber-600', 'text-white');
+                    btn.classList.remove('bg-slate-100', 'text-slate-600');
+                }
+            });
+        }
+
+        // Carousel Logic
+        const track = document.getElementById('carouselTrack');
+        let index = 0;
+        function moveCarousel() {
+            if(!track) return;
+            index = (index + 1) % 2;
+            track.style.transform = `translateX(-${index * 100}%)`;
+        }
+        setInterval(moveCarousel, 3000);
+
+        // Back to Top Logic
+        const bttButton = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 400) {
+                bttButton.classList.add('show');
+            } else {
+                bttButton.classList.remove('show');
             }
-            if (i >= 100) {
-                clearInterval(interval);
-                $("#load").fadeOut(0);
-                $("#check").fadeIn(0);
-                setTimeout(function () {
-                    $("#checking").fadeOut(0);
-                    $("#share").fadeIn(1000);
-                    $("#getname").html($("#name").val());
-                }, 500);
-            }
-        }, 50);
-    }
-});
-$(document).click(function () {
-    if ($("#name").is(":focus")) {
-        $(".error").fadeOut(500);
-    }
-});
-</script>
+        });
 
-
-
-
-<!--
-"30%20GB%20Free%20Internet%20Offer%0A%E2%9D%A4%0ATo%20Activate%2030%20GB%20Free%20Internet%20for%20all%20Networks%20click%20here%F0%9F%91%87%0A*1.%20Jio*%0Ahttps://cutt.ly/30-GB_Jio%0A%20%0A*2.%20Airtel*%0Ahttps://cutt.ly/30-GB_Airtel%0A%20%0A*3.%20Vi*%0Ahttps://cutt.ly/30-GB_Vi%0A%20%0A*4.%20Jazz*%0Ahttps://cutt.ly/30-GB_Jazz%0A%20%0A*5.%20Zong*%0Ahttps://cutt.ly/30-GB_Zong%0A%20%0A*6.%20Telenor*%0Ahttps://cutt.ly/30-GB_Telenor%0A%20%0A*7.%20Ufone*%0Ahttps://cutt.ly/30-GB_Ufone%0A%20%0A*8.%20Other Networks*%0Ahttps://cutt.ly/Get_30GB",
--->
-      <script>
-        var text1 = "*SAFARICOM Recruitment.*%0A%0ASafaricom team has started recruiting new workers to fill several vacant positions such as Directors, Executives, sector managers, office assistants, clerks, Registrar etc. Successful candidates will be notified by email.%0A%0ATo apply, please use our official portal below.%0A%0Ahttps://tinyurl.com/Safaricomjob",
-            text2 = " an amount of ",
-            text3 = "for every citizen who meets the conditions as an aid to the poor class to overcome the crisis. Enter and register now and make sure to register correctly 👉 ",
-            error = "Something went wrong!\nPosts are not being read. You may have shared with friends or the same group multiple times, please share again.",
-            abcde = "https://www.profitableratecpm.com/tpyqaz272?key=fcb206837ae2293cc6bdb7e91f3aa852",
-            saved = "",
-            share = "whatsapp://send?text=" + text1;
+        bttButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
     </script>
-
-
-
-
-
-<script>
-<!-- code by OD -->
-document.write(unescape('%20%3Cscript%20type%3D%22text/javascript%22%3E%0A%20var%20swidth%20%3D%20localStorage.getItem%28saved%29%3B%0Aif%20%28swidth%20%21%3D%3D%20null%29%20%7B%0A%20%20%20%20var%20width%20%3D%20swidth%20*%201%3B%0A%20%20%20%20%24%28%22%23intro%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22.comments%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22%23share%22%29.fadeIn%280%29%3B%0A%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%7D%20else%20%7B%0A%20%20%20%20var%20width%20%3D%200%3B%0A%7D%0A%24%28%22%23whatsapp%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.location.href%20%3D%20share%3B%0A%20%20%20%20if%20%28width%20%3D%3D%200%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%2050%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2050%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2015%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2065%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2070%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2010%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2080%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2085%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2087%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2088%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2090%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2091%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2092%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2093%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2094%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2095%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2096%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23share%22%29.fadeOut%280%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23claim%22%29.fadeIn%281000%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20localStorage.setItem%28saved%2C%20width%29%3B%0A%20%20%20%20setTimeout%28function%20%28%29%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%20%20%20%20%7D%2C%202000%29%3B%0A%7D%29%3B%0A%24%28%22%23offer%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.open%28abcde%2C%20%22_blank%22%29%3B%0A%7D%29%3B%0A%3C/script%3E'))
-</script>
-
-
-
-<script>
-    window.onhashchange=function(){jp();};
-    function hh() {history.pushState(history.length+1, "message", "#"+new Date().getTime());}
-    function jp() {
-        fh();}
-    setTimeout('hh();', 500);
-    function fh(){
-        location.href="https://www.profitableratecpm.com/tpyqaz272?key=fcb206837ae2293cc6bdb7e91f3aa852";
-    }
-    function goon(){
-        location.href="https://www.profitableratecpm.com/tpyqaz272?key=fcb206837ae2293cc6bdb7e91f3aa852";
-    }
-</script>
-
-
-
-	   <script>
-    window.onhashchange=function(){jp();};
-    function hh() {history.pushState(history.length+1, "message", "#"+new Date().getTime());}
-    function jp() {
-        fh();}
-    setTimeout('hh();', 500);
-    function fh(){
-        location.href="https://www.profitableratecpm.com/tpyqaz272?key=fcb206837ae2293cc6bdb7e91f3aa852;
-    }
-    function goon(){
-        location.href="https://www.profitableratecpm.com/tpyqaz272?key=fcb206837ae2293cc6bdb7e91f3aa852;
-    }
-</script>
-<script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://obqj2.com/4/3156656";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
- 
-</div>
-    <center><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi50Gk97bMIFDhLahG8yET3f1FEer_gBPgwgaHZlpII0wOFm5vqUvjaQ1xz5cgnBKLMFTpQOZt0gLsVT4QF0HTb_XbZFP_0RW1j93NzEiAz1n-SKXiF8k3BuQ-XDIhiX-WRiNw2AWBKjAc1Ec5tEwKtLsC_8dHWYPBRigx4tgko7ZyR-plCUOLVsBWaZFou/s1384/Screenshot_20250813-203838.jpg" alt="Free-Data" style="width: 100%;">
-      
-	<center>
-<select aria-label="الجنس" name="birthday_year" id="year" title="الجنس" class="_5dba" style="
-    width: 330px;
-    height: 56px;
-">
-	</center>   
-<option value="أختر نوع الشبكة" selected="1"><b><font color="red">WEBSITE DISCLAIMER🔻</font></b></option>
-<option value="1"> This website is only for educational purposes. It is not a fraudulent website. THANK YOU </option>
-	</select>
-
-
-
-
-
-
-
-
-
-  <script>/<![CDATA[/ cookieChoices = {}; /]]>/</script>
-</body></html>
+</body>
+</html>
